@@ -156,33 +156,6 @@ def Replay(wr):
         Testlength * wr), clicks[0], clicks[0] * 1.0 / (int(Testlength * wr) - total_budget),100000
 
 
-# while index< Testlength:
-#     tmp_auctions = 10000
-#     tmp_budget = int(tmp_auctions*winningrate)
-#     while tmp_auctions>0:
-#         if tmp_budget >0:
-#             rx = GetRelativeranking(test_preds[index],relative_ranking)
-#             if rx+table[tmp_auctions-1][tmp_budget-1]>table[tmp_auctions-1][tmp_budget]:
-#                 tmp_budget = tmp_budget-1
-#                 total_budget = total_budget - 1
-#                 tmp_auctions = tmp_auctions-1
-#                 clicks= clicks + Testdata[1][index]
-#             else:
-#                 tmp_auctions = tmp_auctions - 1
-#             index = index + 1
-#         else:
-#             tmp_auctions = tmp_auctions -1
-#             index = index + 1
-#         if index >= Testlength:
-#             break
-#         if index%1001 == 0 and index!=0:
-#             fout.write(str(Testlength-index)+'\t'+str(clicks[0])+'\t'+str(total_budget)+'\n')
-#             print str(Testlength-index)+'\t'+str(clicks[0])+'\t'+str(total_budget)
-#
-#
-# # print clicks,winningrate, int(Testlength*winningrate)-total_budget,index,total_budget
-# print  "winning_rate dataset algrithm impressions auctions Total_auctions budgets clicks CTR"
-# print winningrate,"ipinyou","DP_dns5",int(Testlength*winningrate)-total_budget,index,Testlength,int(Testlength*winningrate),clicks[0],clicks[0]*1.0/(int(Testlength*winningrate)-total_budget)
 
 Wr_list = [0.01,0.02,0.04,0.08,0.10]
 
